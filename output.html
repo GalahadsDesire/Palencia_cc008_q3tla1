@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <label>First name:</label> <span id="out_fname"></span><br>
+  <label>Middle Name:</label> <span id="out_mname"></span><br>
+  <label>Last name:</label> <span id="out_lname"></span><br>
+
+  <label>Photo:</label> <br>
+<img id="out_photo" src="" alt="Uploaded Photo" style="max-width:200px;max-height:200px;"><br>
+
+<script>
+
+const photoData = localStorage.getItem('photoData');
+if (photoData) {
+    document.getElementById('out_photo').src = photoData;
+} else {
+    document.getElementById('out_photo').style.display = 'none';
+}
+</script>
+
+
+
+  <label>Date Of Birth:</label> <span id="out_myDate"></span><br>
+  <label>Birth Location:</label> <span id="out_blocation"></span><br>
+  <label>Sex/Gender:</label> <span id="out_sex"></span><br>
+  <label>Civil Status:</label> <span id="out_civil"></span><br>
+  <label>Nationality:</label> <span id="out_Nationality"></span><br>
+  <label>Religion:</label> <span id="out_Religion"></span><br>
+  <label>Contact Number:</label> <span id="out_Contact"></span><br>
+  <label>Email Address:</label> <span id="out_Email"></span><br>
+  <label>Home Address:</label> <span id="out_Home"></span><br>
+  <header>Emergency Contact</header>
+  <label>First name:</label> <span id="out_fname1"></span><br>
+  <label>Middle Name:</label> <span id="out_mname1"></span><br>
+  <label>Last name:</label> <span id="out_lname1"></span><br>
+  <label>Relationship:</label> <span id="out_RelationshipText"></span><br>
+  <label>Contact Number:</label> <span id="out_cnum"></span><br>
+  <label>Date Of Birth:</label> <span id="out_myDate1"></span><br>
+  <label>Username:</label> <span id="out_uname"></span><br>
+  
+  <label>Password:</label> <span id="out_cpassword"></span><br>
+<script>
+document.getElementById('out_fname').textContent = localStorage.getItem('fname');
+document.getElementById('out_mname').textContent = localStorage.getItem('mname');
+document.getElementById('out_lname').textContent = localStorage.getItem('lname');
+document.getElementById('out_myDate').textContent = localStorage.getItem('myDate');
+document.getElementById('out_blocation').textContent = localStorage.getItem('blocation');
+document.getElementById('out_sex').textContent = localStorage.getItem('sex');
+document.getElementById('out_civil').textContent = localStorage.getItem('civil');
+document.getElementById('out_Nationality').textContent = localStorage.getItem('Nationality');
+document.getElementById('out_Religion').textContent = localStorage.getItem('Religion');
+document.getElementById('out_Contact').textContent = localStorage.getItem('Contact');
+document.getElementById('out_Email').textContent = localStorage.getItem('Email');
+document.getElementById('out_Home').textContent = localStorage.getItem('Home');
+document.getElementById('out_fname1').textContent = localStorage.getItem('fname1');
+document.getElementById('out_mname1').textContent = localStorage.getItem('mname1');
+document.getElementById('out_lname1').textContent = localStorage.getItem('lname1');
+document.getElementById('out_RelationshipText').textContent = localStorage.getItem('RelationshipText');
+document.getElementById('out_cnum').textContent = localStorage.getItem('cnum');
+document.getElementById('out_myDate1').textContent = localStorage.getItem('myDate1');
+document.getElementById('out_uname').textContent = localStorage.getItem('uname');
+
+document.getElementById('out_cpassword').textContent = localStorage.getItem('cpassword');
+</script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<form id="mainForm" action="output.html" onsubmit="saveFormData(event)">
+  <label for="fname">First name:</label><br>
+     <input type="text" id="fname" name="fname"><br>
+      <label for="mname">Middle Name:</label><br>
+    <input type="text" id="mname" name="mname"><br>
+  <label for="lname">Last name:</label><br>
+     <input type="text" id="lname" name="lname"><br>
+  <label for="Photo">Photo:</label><br>
+      <input type="file" id="imageUpload" name="imageUpload" accept="image/*"><br><br>
+  <label for="myDate">Date Of Birth:</label><br>
+      <input type="date" id="myDate" name="myDate"><br>
+  <label for="blocation">Birth Location:</label><br>
+  <input type="text" id="blocation" name="blocation" maxlength="64"><br>
+  <label>Sex/Gender:</label><br>
+  <input type="radio" name="sex" value="Male">Male<br>
+     <input type="radio" name="sex" value="Female">Female<br>
+  <label>Civil Status:</label><br>
+     <input type="radio" name="civil" value="Single">Single<br>
+  <input type="radio" name="civil" value="Married">Married<br>
+  <input type="radio" name="civil" value="Divorced">Divorced<br>
+       <label for="Nationality">Nationality:</label><br>
+  <input type="text" id="Nationality" name="Nationality" maxlength="64"><br>
+      <label for="Religion">Religion:</label><br>
+  <input type="text" id="Religion" name="Religion" maxlength="64"><br>
+       <label for="Contact">Contact Number:</label><br>
+  <input type="text" id="Contact" name="Contact" maxlength="20"><br>
+      <label for="Email">Email Address:</label><br>
+  <input type="text" id="Email" name="Emailinput"><br>
+      <label for="Home">Home Address:</label><br>
+  <input type="text" id="Home" name="Home"><br>
+
+
+
+  <header>Emergency Contact</header>
+     <label for="fname1">First name:</label><br>
+     <input type="text" id="fname1" name="fname1"><br>
+     <label for="mname1">Middle Name:</label><br>
+  <input type="text" id="mname1" name="mname1"><br>
+  <label for="lname1">Last name:</label><br>
+  <input type="text" id="lname1" name="lname1"><br>
+      <label for="RelationshipText">Relationship:</label><br>
+  <input type="text" id="RelationshipText" name="RelationshipText"><br>
+
+
+  <label for="cnum">Contact Number:</label><br>
+  <input type="text" id="cnum" name="cnum" maxlength="20"><br>
+  <label for="myDate1">Date Of Birth:</label><br>
+  <input type="date" id="myDate1" name="myDate1"><br>
+
+
+
+
+
+  <header>Account</header>
+  <label for="uname">Username:</label><br>
+     <input type="text" id="uname" name="uname" maxlength="64"><br>
+  <label for="password">Password:</label><br>
+   <input type="text" id="password" name="password" maxlength="64"><br>
+     <label for="cpassword">Confirm Password:</label><br>
+  <input type="password" id="cpassword" name="cpassword" maxlength="64"><br>
+  <input type="submit" value="Submit">
+</form>
+<script src="script.js"></script>
+</body>
+</html>
